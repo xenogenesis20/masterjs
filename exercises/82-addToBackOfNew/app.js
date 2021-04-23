@@ -3,7 +3,7 @@
 const addToBackOfNew = (array,number) =>{
     let newArray = [];
     newArray = array;
-    newArray.map(number => );
+    newArray.map(number => newArray.push(number) );
     return newArray;
 
 }
