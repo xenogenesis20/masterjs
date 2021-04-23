@@ -4,10 +4,10 @@ let input = [1, 2];
 // var output = addToFrontOfNew(input, 3)
 
 const addToFrontOfNew = (input,num) =>{
-    
-       let output = input.map((x) =>{ input.unshift(num) })
-    
-    return output
+    let newArray = [];
+    input.forEach(element => newArray.push(element))
+    newArray.unshift(num)
+       return newArray
 }
 
 
