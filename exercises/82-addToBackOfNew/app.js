@@ -1,9 +1,8 @@
 // Write your function here
 
 const addToBackOfNew = (array,number) =>{
-    let newArray = [];
-    newArray = array;
-    newArray.map(number => newArray.push(number) );
+    let newArray = array.map(item => item );
+    newArray.unshift(number)
     return newArray;
 
 }

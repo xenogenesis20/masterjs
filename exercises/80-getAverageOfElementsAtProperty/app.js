@@ -8,7 +8,7 @@ var obj = {
 const getAverageOfElementsAtProperty = (obj, key) => {
     let total = 0;
     for (prop in obj) {
-        if ((prop == key) && (obj[key].length !== 0)){
+        if ((prop == key) && (obj[key].length !== 0) && Array.isArray(obj[prop])){
             for (let i = 0; i < obj[key].length; i++) {
                 total += obj[key][i]
             }
@@ -20,4 +20,4 @@ const getAverageOfElementsAtProperty = (obj, key) => {
 }
 
 console.log(getAverageOfElementsAtProperty(obj, 'key'));
-console.log(typeof []);
+// console.log(typeof []);

@@ -12,5 +12,6 @@ const addToFrontOfNew = (input,num) =>{
 
 
 console.log(addToFrontOfNew(input,3));
+console.log(input);
 
 
